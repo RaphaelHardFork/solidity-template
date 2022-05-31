@@ -2,8 +2,8 @@
 
 pragma solidity ^0.8.13;
 
-import "@oz/token/ERC20/ERC20.sol";
-import "@oz/utils/Address.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/utils/Address.sol";  
 
 contract FungibleToken is ERC20 {
     using Address for address payable;
