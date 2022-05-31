@@ -12,5 +12,8 @@
     "ethers": "^5.0.0",
     "hardhat": "^2.9.6",
     "hardhat-preprocessor": "^0.1.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1"
   }
 }

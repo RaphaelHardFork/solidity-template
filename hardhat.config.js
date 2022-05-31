@@ -1,12 +1,7 @@
-require("@openzeppelin/hardhat-upgrades")
 require("@nomiclabs/hardhat-waffle")
-require("@nomiclabs/hardhat-solhint")
-require("@nomiclabs/hardhat-etherscan")
-require("hardhat-docgen")
-require("hardhat-gas-reporter")
-require("hardhat-contract-sizer")
 require("hardhat-preprocessor")
 require("dotenv").config()
+const fs = require("fs")
 
 const INFURA_PROJECT_ID = process.env.INFURA_PROJECT_ID
 const PRIVATE_KEY = process.env.PRIVATE_KEY
@@ -90,7 +85,7 @@ module.exports = {
     disambiguatePaths: false,
   },
   etherscan: {
-    apiKey: BSCSCAN_KEY,
+    apiKey: ETHERSCAN_KEY,
   },
   preprocess: {
     eachLine: (hre) => ({
