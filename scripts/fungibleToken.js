@@ -14,8 +14,6 @@ const main = async () => {
   await deployed("FungibleToken", hre.network.name, token.address, [
     deployer.address,
   ])
-
-  console.log("Greeter deployed to:", greeter.address)
 }
 
 main()
